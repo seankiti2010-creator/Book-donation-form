@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Donation Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #cccccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #245b91;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        h2 {
+            color: #245b91;
+            border-bottom: 2px solid #245b91;
+            padding-bottom: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        .checkbox {
+            font-weight: normal;
+        }
+
+        button {
+            width: 100%;
+            background-color: #245b91;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 25px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #17416c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Book Donation Form</h1>
+
+    <p>
+        Help our school library grow!
+        Donate your books and support learning.
+    </p>
+
+    <form>
+
+        <!-- Part 1: Donor Information -->
+
+        <h2>1. Donor Information</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name"
+               name="name" placeholder="Enter your full name"
+               required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email"
+               name="email" placeholder="Enter your email"
+               required>
+
+        <label for="date">Donation Date:</label>
+        <input type="date" id="date"
+               name="date" required>
+
+
+        <!-- Part 2: Book Information -->
+
+        <h2>2. Book Information</h2>
+
+        <label for="category">Book Category:</label>
+
+        <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="fiction">Fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="education">Education</option>
+            <option value="technology">Technology</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="condition">Book Condition:</label>
+
+        <select id="condition" name="condition" required>
+            <option value="">Select book condition</option>
+            <option value="new">New</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+        </select>
+
+
+        <!-- Part 3: Book Details -->
+
+        <h2>3. Book Details</h2>
+
+        <label for="title">Book Title:</label>
+
+        <input type="text" id="title"
+               name="title" placeholder="Enter the book title"
+               required>
+
+        <label for="notes">Additional Notes:</label>
+
+        <textarea id="notes" name="notes"
+                  rows="4"
+                  placeholder="Write additional information about your book"></textarea>
+
+
+        <!-- Part 4: Drop-off Details -->
+
+        <h2>4. Donation Drop-off</h2>
+
+        <label>Select your preferred drop-off day:</label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="day" value="Monday">
+            Monday
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="day" value="Wednesday">
+            Wednesday
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox" name="day" value="Friday">
+            Friday
+        </label>
+
+        <button type="submit">Donate Book</button>
+
+    </form>
+
+    <footer>
+        <p>Thank you for supporting our school library!</p>
+        <p>&copy; 2026 Book Donation Project</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
